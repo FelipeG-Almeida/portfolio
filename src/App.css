@@ -1,0 +1,36 @@
+:root {
+	--text-main: #383838;
+	--bg-color: #f8f8f8;
+	--main-color: #3642b3;
+	--secondary-color: #4c5eff;
+	--main-gradient: linear-gradient(
+		90deg,
+		rgba(76, 94, 255, 1) 25%,
+		rgba(54, 66, 179, 1) 100%
+	);
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	background-color: var(--bg-color);
+	color: var(--text-main);
+}
+
+main > section {
+	padding: 10% 5% 0;
+}
+
+@media screen and (max-width: 1023px) {
+	main > section {
+		padding: 10% 10% 0;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	main > section {
+		padding: 5%;
+	}
+}
