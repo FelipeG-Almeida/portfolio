@@ -4,7 +4,6 @@ export const section = styled.section`
 	align-items: center;
 	display: flex;
 	flex-direction: row;
-	height: 100%;
 	justify-content: space-between;
 
 	@media screen and (max-width: 1023px) {

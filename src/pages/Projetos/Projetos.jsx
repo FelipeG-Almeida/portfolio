@@ -28,10 +28,19 @@ export default function Projetos() {
 							<p>{projeto.descricao}</p>
 							<s.div>
 								<Button text="Estudo de caso" />
-								<Button text="Demo" />
+								{projeto.demo && (
+									<Button
+										text="Demo"
+										icon="fa-solid fa-play"
+										link={projeto.demo}
+										newTab={true}
+									/>
+								)}
 								<Button
 									text="Repo"
 									icon="fa-brands fa-github"
+									link={projeto.git}
+									newTab={true}
 								></Button>
 							</s.div>
 						</div>

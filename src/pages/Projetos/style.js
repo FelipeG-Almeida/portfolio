@@ -7,25 +7,22 @@ export const section = styled.section`
 	text-align: center;
 `;
 
-export const projectsDiv = styled.div`
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	grid-gap: 20px;
-`;
-
 export const card = styled.div`
 	background-color: rgba(54, 66, 179, 0.05);
+	border: 1px solid rgba(54, 66, 179, 0.05);
 	border-radius: 7px;
 	color: var(--text-main);
 	column-gap: 10px;
 	display: flex;
 	padding: 20px;
 	text-align: left;
+	transition: 0.25s all ease-in-out;
 
 	img {
-		border: 2px solid rgba(54, 66, 179, 0.1);
+		border: 1px solid rgba(54, 66, 179, 0.1);
 		border-radius: 7px;
 		max-height: 150px;
+		max-width: 210px;
 	}
 
 	h6 {
@@ -38,6 +35,29 @@ export const card = styled.div`
 		font-size: 1rem;
 		line-height: 1.5;
 		margin-bottom: 10px;
+	}
+
+	&:hover {
+		border-color: var(--main-color);
+		color: var(--main-color);
+		transform: translateY(-3px);
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+			rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+			rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	}
+`;
+
+export const projectsDiv = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 20px;
+
+	&:hover ${card} {
+		opacity: 0.5;
+	}
+
+	${card}:hover {
+		opacity: 1;
 	}
 `;
 
