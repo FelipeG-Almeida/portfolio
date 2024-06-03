@@ -14,6 +14,7 @@ export const card = styled.div`
 	color: var(--text-main);
 	column-gap: 10px;
 	display: flex;
+	opacity: ${({ isHovered, isActive }) => (isHovered || isActive ? 1 : 0.5)};
 	padding: 20px;
 	text-align: left;
 	transition: 0.25s all ease-in-out;
@@ -51,14 +52,6 @@ export const projectsDiv = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 20px;
-
-	&:hover ${card} {
-		opacity: 0.5;
-	}
-
-	${card}:hover {
-		opacity: 1;
-	}
 `;
 
 export const div = styled.div`

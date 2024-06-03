@@ -4,6 +4,12 @@ import Labeddit from '../../assets/thumbs/labeddit.png';
 import PokedexVanilla from '../../assets/thumbs/pokedex-vanilla.png';
 import Pokedex from '../../assets/thumbs/pokedex.png';
 import Vollmed from '../../assets/thumbs/vollmed.jpg';
+import Labook from '../../assets/thumbs/labook.png';
+import Decodificador from '../../assets/thumbs/decodificador.png';
+import Protech from '../../assets/thumbs/protech.png';
+import Santander from '../../assets/thumbs/santander.jpg';
+import AngularStore from '../../assets/thumbs/angular-store.png';
+import BovControl from '../../assets/thumbs/bov-control.png';
 
 const projetos = [
 	{
@@ -102,22 +108,112 @@ const projetos = [
 		estudo: {
 			ideia: 'Projeto React que consiste em uma página que consulta a API pública da Pokedex, trazendo informações detalhadas sobre pokemons por meio de uma interface construída em componentes, desenvolvido no curso de Desenvolvimento Full Stack da Labenu.',
 			stack: ['React', 'Styled-components', 'Mobile', 'Chakra UI'],
-			readme: '../../assets/readme/planilhas-blitz.md',
+			readme: '../../assets/readme/pokedex.md',
 		},
 	},
 	{
 		id: 6,
 		nome: 'API Vollmed',
 		descricao:
-			'Sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, tive a oportunidade de desenvolver minha primeira API CRUD utilizando Spring com MySQL.',
+			'Sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, minha primeira API CRUD utilizando Spring com MySQL.',
 		thumb: Vollmed,
-		tags: ['Java', 'Spring Boot', 'MySQL', 'Back-end'],
+		tags: ['Java', 'Spring', 'MySQL', 'Back-end'],
 		git: 'https://github.com/FelipeG-Almeida/java-spring-api-rest',
 		estudo: {
 			ideia: 'API Rest criada com framework Java Spring, simula o sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, tive a oportunidade de desenvolver minha primeira API CRUD utilizando Spring com MySQL.',
-			stack: ['Java', 'Spring Boot', 'MySQL'],
+			stack: ['Java', 'Spring', 'MySQL'],
+			readme: '../../assets/readme/vollmed.md',
+		},
+	},
+	{
+		id: 7,
+		nome: 'Labook',
+		descricao:
+			'Backend de uma rede social com o objetivo de promover a conexão e interação entre pessoas. Desenvolvido como parte do projeto final do curso de Desenvolvimento da Labenu.',
+		thumb: Labook,
+		tags: ['NodeJS', 'Express', 'TypeScript', 'SQLite', 'Back-end'],
+		git: 'https://github.com/FelipeG-Almeida/projeto-labook-backend',
+		estudo: {
+			ideia: 'Este é o projeto Labook, uma rede social com o objetivo de promover a conexão e interação entre pessoas. Desenvolvido como parte do projeto final do curso de Desenvolvimento Full Stack da Labenu.',
+			stack: [
+				'NodeJS',
+				'Express',
+				'TypeScript',
+				'SQLite',
+				'Knex',
+				'MVC',
+				'UUID',
+				'POO',
+				'Postman',
+			],
+			readme: '../../assets/readme/labook.md',
+		},
+	},
+	{
+		id: 8,
+		nome: 'Decodificador',
+		descricao:
+			'Um decodificador simples que permite criptografar e descriptografar mensagens de texto, através da substituição de letras, um desafio que faz parte do programa Oracle Next Education.',
+		thumb: Decodificador,
+		tags: ['HTML', 'CSS', 'JavaScript', 'Front-end'],
+		git: 'https://github.com/FelipeG-Almeida/decodificador',
+		demo: 'https://felipeg-almeida.github.io/decodificador/',
+		estudo: {
+			ideia: 'Este projeto consiste em um decodificador simples que permite criptografar e descriptografar mensagens de texto, um desafio que faz parte do programa Oracle Next Education. O decodificador utiliza uma substituição de letras minúsculas, sem acentos, por palavras-chave.',
+			stack: ['HTML', 'CSS', 'JavaScript', 'Mobile'],
+			readme: '../../assets/readme/decodificador.md',
+		},
+	},
+	{
+		id: 9,
+		nome: 'Protech Computers',
+		descricao:
+			'Uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start, da Capgemini.',
+		thumb: Protech,
+		tags: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Front-end'],
+		git: 'https://github.com/FelipeG-Almeida/planilhas-blitz',
+		demo: 'https://www.planilhasblitz.com',
+		estudo: {
+			ideia: 'Este é o projeto ProTech Computers uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start da Capgemini',
+			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+			readme: '../../assets/readme/protech.md',
+		},
+	},
+	{
+		id: 10,
+		nome: 'API Santander',
+		descricao:
+			'API RESTful Java criada durante o bootcamp Santander DIO, que simula um sistema bancário com funções de conta e cartões.',
+		thumb: Santander,
+		tags: ['Java', 'Spring', 'PostgreSQL', 'Back-end'],
+		git: 'https://github.com/FelipeG-Almeida/santander-dev-2023',
+		estudo: {
+			ideia: 'API RESTful Java criada durante o bootcamp Santander DIO, que simula um sistema bancário com funções de conta e cartões.',
+			stack: ['Java', 'Spring', 'PostgreSQL'],
 			readme: '../../assets/readme/planilhas-blitz.md',
 		},
+	},
+	{
+		id: 11,
+		nome: 'Angular Store',
+		descricao:
+			'Cópia da PS Store (que tem jogos de Xbox e PC por algum motivo 😅) feita com Angular, desafio concluido durante o bootcamp Santander DIO.',
+		thumb: AngularStore,
+		tags: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Front-end'],
+		git: 'https://github.com/FelipeG-Almeida/angular-store',
+		estudo: {
+			ideia: 'Cópia da PS Store (que tem jogos de Xbox e PC por algum motivo 😅) feita com Angular, desafio concluido durante o bootcamp Santander DIO.',
+			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+			readme: '../../assets/readme/angular-store.md',
+		},
+	},
+	{
+		id: 12,
+		nome: 'Bov Control',
+		descricao:
+			'Sistema Desktop para gestão de fazendas de gado de corte, desenvolvido usando Electron e React, com intúito de auxiliar o pecuarista em gerir seu negócio.',
+		thumb: BovControl,
+		tags: ['Electron', 'React', 'SQLite', 'Full-stack'],
 	},
 ];
 
