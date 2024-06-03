@@ -19,7 +19,6 @@ export default function NavBar() {
 					<s.desktopLi>Projetos</s.desktopLi>
 					<s.desktopLi>Experiências</s.desktopLi>
 					<s.desktopLi>Cursos</s.desktopLi>
-					<s.desktopLi>Projetos Paralelos</s.desktopLi>
 					<s.desktopLi>Contato</s.desktopLi>
 				</s.desktopUl>
 			) : (

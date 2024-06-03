@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const h2 = styled.h2`
 	font-size: 2rem;
 	font-weight: 800;
+	line-height: 1;
 	margin-bottom: 15px;
 	text-align: center;
 	text-transform: uppercase;

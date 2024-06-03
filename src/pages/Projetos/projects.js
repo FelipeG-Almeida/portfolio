@@ -14,6 +14,15 @@ import BovControl from '../../assets/thumbs/bov-control.png';
 const projetos = [
 	{
 		id: 1,
+		nome: 'Bov Control',
+		descricao:
+			'Sistema Desktop para gestão de fazendas de gado de corte, desenvolvido usando Electron e React, com intúito de auxiliar o pecuarista em gerir seu negócio.',
+		thumb: BovControl,
+		tags: ['Electron', 'React', 'SQLite', 'Full-stack'],
+		unfinished: true,
+	},
+	{
+		id: 2,
 		nome: 'Planilhas Blitz',
 		descricao:
 			'Plataforma de e-commerce integrada à Hotmart, especializada na criação e venda de planilhas de Excel, projetadas para automatizar e simplificar a rotina de micro e pequenas empresas.',
@@ -28,7 +37,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 2,
+		id: 3,
 		nome: 'BounceBox',
 		descricao:
 			'Aplicação que consome uma API de email temporário para que os usuários possam utilizar serviços sem expor seu email real, através de uma interface intuitiva e amigável.',
@@ -43,7 +52,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 3,
+		id: 4,
 		nome: 'Labeddit',
 		descricao:
 			'Rede social fortemente inspirada no reddit, o projeto final que coroa meu percurso pelo curso full-stack da Labenu.',
@@ -82,12 +91,12 @@ const projetos = [
 		},
 	},
 	{
-		id: 4,
+		id: 5,
 		nome: 'Pokedex Vanilla',
 		descricao:
 			'Desafio Pokedex desenvolvido durante o bootcamp Santander Coders 2023, consiste no consumo da API Pokedex, listando Pokemons e suas informações.',
 		thumb: PokedexVanilla,
-		tags: ['Front-end'],
+		tags: ['JavaScript', 'HTML', 'CSS', 'Front-end'],
 		git: 'https://github.com/FelipeG-Almeida/pokedex-vanilla',
 		demo: 'https://felipeg-almeida.github.io/pokedex-vanilla/',
 		estudo: {
@@ -97,7 +106,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 5,
+		id: 6,
 		nome: 'Pokedex React',
 		descricao:
 			'Projeto que não pode faltar no repositório de nenhum Dev Junior que se preze 😎 Consiste em um sistema que acessa a Api Pública PokeApi.',
@@ -112,7 +121,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 6,
+		id: 7,
 		nome: 'API Vollmed',
 		descricao:
 			'Sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, minha primeira API CRUD utilizando Spring com MySQL.',
@@ -126,7 +135,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 7,
+		id: 8,
 		nome: 'Labook',
 		descricao:
 			'Backend de uma rede social com o objetivo de promover a conexão e interação entre pessoas. Desenvolvido como parte do projeto final do curso de Desenvolvimento da Labenu.',
@@ -150,7 +159,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 8,
+		id: 9,
 		nome: 'Decodificador',
 		descricao:
 			'Um decodificador simples que permite criptografar e descriptografar mensagens de texto, através da substituição de letras, um desafio que faz parte do programa Oracle Next Education.',
@@ -165,14 +174,14 @@ const projetos = [
 		},
 	},
 	{
-		id: 9,
+		id: 10,
 		nome: 'Protech Computers',
 		descricao:
 			'Uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start, da Capgemini.',
 		thumb: Protech,
 		tags: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Front-end'],
-		git: 'https://github.com/FelipeG-Almeida/planilhas-blitz',
-		demo: 'https://www.planilhasblitz.com',
+		git: 'https://github.com/FelipeG-Almeida/protech-computers',
+		demo: 'https://felipeg-almeida.github.io/protech-computers/',
 		estudo: {
 			ideia: 'Este é o projeto ProTech Computers uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start da Capgemini',
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
@@ -180,7 +189,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 10,
+		id: 11,
 		nome: 'API Santander',
 		descricao:
 			'API RESTful Java criada durante o bootcamp Santander DIO, que simula um sistema bancário com funções de conta e cartões.',
@@ -194,7 +203,7 @@ const projetos = [
 		},
 	},
 	{
-		id: 11,
+		id: 12,
 		nome: 'Angular Store',
 		descricao:
 			'Cópia da PS Store (que tem jogos de Xbox e PC por algum motivo 😅) feita com Angular, desafio concluido durante o bootcamp Santander DIO.',
@@ -206,14 +215,6 @@ const projetos = [
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
 			readme: '../../assets/readme/angular-store.md',
 		},
-	},
-	{
-		id: 12,
-		nome: 'Bov Control',
-		descricao:
-			'Sistema Desktop para gestão de fazendas de gado de corte, desenvolvido usando Electron e React, com intúito de auxiliar o pecuarista em gerir seu negócio.',
-		thumb: BovControl,
-		tags: ['Electron', 'React', 'SQLite', 'Full-stack'],
 	},
 ];
 
