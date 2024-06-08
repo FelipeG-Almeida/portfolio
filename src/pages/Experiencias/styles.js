@@ -13,52 +13,54 @@ export const b = styled.b`
 `;
 
 export const jobsDiv = styled.div`
+	column-gap: 20px;
 	display: grid;
-	grid-template-columns: 40% 40%;
-	justify-content: space-around;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-content: space-between;
+	row-gap: 20px;
 `;
 
 export const card = styled.div`
 	align-items: center;
-	background-color: #fff;
-	border-radius: 25px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	border-radius: 7px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+	column-gap: 30px;
 	display: flex;
-	flex-direction: column;
-	padding: 20px 30px;
-	row-gap: 5px;
-
-	div {
-		align-items: center;
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-	}
+	padding: 20px;
+	text-align: left;
 
 	img {
-		height: 125px;
-		width: 125px;
+		height: 115px;
+		width: 115px;
 	}
 
 	h5 {
-		font-size: 2rem;
-		font-weight: 800;
+		font-size: 1.25rem;
+		font-weight: 700;
 	}
 
 	small {
+		background-color: rgba(54, 66, 179, 0.1);
+		border-radius: 7px;
 		display: inline-block;
-		font-weight: 600;
-		font-size: 0.8rem;
-		text-align: right;
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin: 10px 0;
+		padding: 5px 10px;
 	}
 
 	h6 {
-		font-size: 1.15rem;
-		font-weight: 700;
+		font-size: 1.1rem;
+		font-weight: 600;
 	}
 
 	p {
 		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
 	}
 `;

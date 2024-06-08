@@ -4,6 +4,7 @@ import Inicio from './pages/Inicio/Inicio';
 import Projetos from './pages/Projetos/Projetos';
 import Sobre from './pages/Sobre/Sobre';
 import Experiencias from './pages/Experiencias/Experiencias';
+import Formacoes from './pages/Formacoes/Formacoes';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +17,7 @@ function App() {
 			<Sobre />
 			<Projetos />
 			<Experiencias />
+			<Formacoes />
 		</main>
 	);
 }

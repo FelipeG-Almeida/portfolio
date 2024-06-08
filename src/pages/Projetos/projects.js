@@ -59,7 +59,6 @@ const projetos = [
 		thumb: Labeddit,
 		tags: [
 			'React',
-			'Styled-components',
 			'NodeJs',
 			'Express',
 			'SQLite',

@@ -18,7 +18,7 @@ export default function NavBar() {
 					<s.desktopLi>Stack</s.desktopLi>
 					<s.desktopLi>Projetos</s.desktopLi>
 					<s.desktopLi>Experiências</s.desktopLi>
-					<s.desktopLi>Cursos</s.desktopLi>
+					<s.desktopLi>Formação</s.desktopLi>
 					<s.desktopLi>Contato</s.desktopLi>
 				</s.desktopUl>
 			) : (
@@ -34,7 +34,7 @@ export default function NavBar() {
 						<s.mobileLi>Stack</s.mobileLi>
 						<s.mobileLi>Projetos</s.mobileLi>
 						<s.mobileLi>Experiências</s.mobileLi>
-						<s.mobileLi>Cursos</s.mobileLi>
+						<s.mobileLi>Formação</s.mobileLi>
 						<s.mobileLi>Projetos Paralelos</s.mobileLi>
 						<s.mobileLi>Contato</s.mobileLi>
 					</s.mobileUl>
