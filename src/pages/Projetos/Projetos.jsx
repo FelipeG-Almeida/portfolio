@@ -53,7 +53,7 @@ export default function Projetos() {
 	};
 
 	return (
-		<s.section>
+		<s.section id='projetos'>
 			<Title text="Projetos" />
 			<p>
 				Alguns dos meus projetos <s.b>pessoais e profissionais</s.b> que

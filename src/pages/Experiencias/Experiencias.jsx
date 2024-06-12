@@ -5,7 +5,7 @@ import * as s from './styles';
 
 export default function Experiencias() {
 	return (
-		<s.section>
+		<s.section id='experiencias'>
 			<Title text="Experiências" />
 			<p>
 				Um resumo das minhas <s.b>experiências profissionais</s.b>,

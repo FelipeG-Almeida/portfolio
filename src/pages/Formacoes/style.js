@@ -5,6 +5,10 @@ export const section = styled.section`
 	flex-direction: column;
 	row-gap: 20px;
 	text-align: center;
+
+	p {
+		line-height: 1.5;
+	}
 `;
 
 export const div = styled.div`
@@ -13,18 +17,38 @@ export const div = styled.div`
 	grid-template-columns: 1fr 2fr;
 	margin-top: 30px;
 	text-align: left;
+
+	@media screen and (max-width: 1023px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const h3 = styled.h3`
 	font-size: 1.6rem;
 	font-weight: 800;
 	margin-bottom: 10px;
+	grid-column: 1 / span 2;
+
+	@media screen and (max-width: 767px) {
+		grid-column: 1;	
+	}
 `;
 
-export const cardsDiv = styled.div`
+export const cardAcademicas = styled.div`
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
+`;
+
+export const cardCursos = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content;
+	gap: 10px;
+
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const card = styled.div`

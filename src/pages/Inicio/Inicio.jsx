@@ -4,7 +4,7 @@ import * as s from './styles';
 
 export default function Inicio() {
 	return (
-		<s.section>
+		<s.section id='home'>
 			<div>
 				<s.h2>Procurando um desenvolvedor?</s.h2>
 				<s.h1>Felipe Almeida</s.h1>
@@ -16,7 +16,7 @@ export default function Inicio() {
 			</div>
 			<s.imgDiv>
 				<s.perfilDiv>
-					<s.perfilImg src="" alt="" />
+					<s.perfilImg src="./perfil-git.jpg" alt="" />
 				</s.perfilDiv>
 				<s.graphic src="/blob.svg" alt="" />
 			</s.imgDiv>

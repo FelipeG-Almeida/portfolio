@@ -31,7 +31,7 @@ export default function Sobre() {
 	];
 
 	return (
-		<s.section>
+		<s.section id='sobre'>
 			<s.titleDiv>
 				<Title text="Sobre mim" />
 			</s.titleDiv>

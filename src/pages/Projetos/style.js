@@ -5,6 +5,10 @@ export const section = styled.section`
 	flex-direction: column;
 	row-gap: 20px;
 	text-align: center;
+
+	p {
+		line-height: 1.5;
+	}
 `;
 
 export const selectDiv = styled.div`

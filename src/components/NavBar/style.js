@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const nav = styled.nav`
 	background-color: var(--bg-color);
@@ -41,7 +42,7 @@ export const mobileUl = styled.ul`
 	z-index: 999;
 `;
 
-export const desktopLi = styled.li`
+export const desktopLi = styled(Link)`
 	border-radius: 7px;
 	cursor: pointer;
 	font-size: 0.9rem;
@@ -55,7 +56,7 @@ export const desktopLi = styled.li`
 	}
 `;
 
-export const mobileLi = styled.li`
+export const mobileLi = styled(Link)`
 	font-size: 0.9rem;
 	font-weight: 300;
 	padding: 10px;

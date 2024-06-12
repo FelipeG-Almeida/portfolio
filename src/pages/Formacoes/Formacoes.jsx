@@ -1,11 +1,14 @@
 import Title from '../../components/Title/Title';
 import IFPA from '../../assets/icons/ifpa.png';
 import Uninter from '../../assets/icons/uninter.png';
+import Labenu from '../../assets/icons/labenu.png';
+import Alura from '../../assets/icons/alura.png';
+import DIO from '../../assets/icons/dio.png';
 import * as s from './style';
 
 export default function Formacoes() {
 	return (
-		<s.section>
+		<s.section id='formacoes'>
 			<div>
 				<Title text="Formação" />
 			</div>
@@ -15,8 +18,8 @@ export default function Formacoes() {
 				adquiridos ao longo da minha jornada educacional.
 			</p>
 			<s.div>
-				<s.cardsDiv>
-					<s.h3>Formações Acadêmicas</s.h3>
+				<s.cardAcademicas>
+					<s.h3>Acadêmica</s.h3>
 					<s.card>
 						<s.imageDiv>
 							<img src={IFPA} alt="" />
@@ -40,9 +43,46 @@ export default function Formacoes() {
 							<small>03/2014 - 05/2017</small>
 						</div>
 					</s.card>
-				</s.cardsDiv>
-				<s.cardsDiv>
+				</s.cardAcademicas>
+				<s.cardCursos>
 					<s.h3>Cursos e Bootcamps</s.h3>
+					<s.card>
+						<s.imageDiv>
+							<img src={Labenu} alt="" />
+						</s.imageDiv>
+						<div>
+							<h5>Labenu</h5>
+							<p>
+								Desenvolvimento Web Full Stack (React + NodeJs)
+							</p>
+							<small>07/2022 - 07/2023</small>
+						</div>
+					</s.card>
+					<s.card>
+						<s.imageDiv>
+							<img src={Alura} alt="" />
+						</s.imageDiv>
+						<div>
+							<h5>Alura + Oracle</h5>
+							<p>
+								Oracle Next Education, Backend (Java + Spring)
+							</p>
+							<small>04/2023 - 10/2023</small>
+						</div>
+					</s.card>
+					<s.card>
+						<s.imageDiv>
+							<img src={DIO} alt="" />
+						</s.imageDiv>
+						<div>
+							<h5>DIO + Santander</h5>
+							<p>
+								Bootcamp Santander Coders Fullstack (Java +
+								Angular)
+							</p>
+							<small>08/2023 - 10/2023</small>
+						</div>
+					</s.card>
 					<s.card>
 						<s.imageDiv>
 							<img src={IFPA} alt="" />
@@ -52,11 +92,11 @@ export default function Formacoes() {
 								Instituto Federal de Educação, Ciência e
 								Tecnologia do Pará
 							</h5>
-							<p>Licenciatura em Informática</p>
-							<small>01/2016 - 10/2020</small>
+							<p>Técnico em Redes de Computadores</p>
+							<small>01/2016 - 08/2017</small>
 						</div>
 					</s.card>
-				</s.cardsDiv>
+				</s.cardCursos>
 			</s.div>
 		</s.section>
 	);

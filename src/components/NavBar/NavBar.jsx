@@ -13,13 +13,24 @@ export default function NavBar() {
 		<s.nav>
 			{window.innerWidth >= 1024 ? (
 				<s.desktopUl>
-					<s.desktopLi>Início</s.desktopLi>
-					<s.desktopLi>Sobre mim</s.desktopLi>
-					<s.desktopLi>Stack</s.desktopLi>
-					<s.desktopLi>Projetos</s.desktopLi>
-					<s.desktopLi>Experiências</s.desktopLi>
-					<s.desktopLi>Formação</s.desktopLi>
-					<s.desktopLi>Contato</s.desktopLi>
+					<s.desktopLi to="home" smooth={true} duration={500}>
+						Início
+					</s.desktopLi>
+					<s.desktopLi to="sobre" smooth={true} duration={500}>
+						Sobre mim
+					</s.desktopLi>
+					<s.desktopLi to="projetos" smooth={true} duration={500}>
+						Projetos
+					</s.desktopLi>
+					<s.desktopLi to="experiencias" smooth={true} duration={500}>
+						Experiências
+					</s.desktopLi>
+					<s.desktopLi to="formacoes" smooth={true} duration={500}>
+						Formação
+					</s.desktopLi>
+					<s.desktopLi to="contato" smooth={true} duration={500}>
+						Contato
+					</s.desktopLi>
 				</s.desktopUl>
 			) : (
 				<s.hamburguer>
@@ -29,14 +40,60 @@ export default function NavBar() {
 					<s.mobileUl
 						style={{ display: navToggled ? 'flex' : 'none' }}
 					>
-						<s.mobileLi>Início</s.mobileLi>
-						<s.mobileLi>Sobre mim</s.mobileLi>
-						<s.mobileLi>Stack</s.mobileLi>
-						<s.mobileLi>Projetos</s.mobileLi>
-						<s.mobileLi>Experiências</s.mobileLi>
-						<s.mobileLi>Formação</s.mobileLi>
-						<s.mobileLi>Projetos Paralelos</s.mobileLi>
-						<s.mobileLi>Contato</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="home"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Início
+						</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="sobre"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Sobre mim
+						</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="projetos"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Projetos
+						</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="experiencias"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Experiências
+						</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="formacoes"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Formação
+						</s.mobileLi>
+						<s.mobileLi
+							onClick={toggleNav}
+							to="contato"
+							smooth={true}
+							duration={500}
+							offset={-250}
+						>
+							Contato
+						</s.mobileLi>
 					</s.mobileUl>
 				</s.hamburguer>
 			)}
