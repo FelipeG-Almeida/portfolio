@@ -94,6 +94,27 @@ export const div = styled.div`
 		font-size: 0.8rem;
 		padding: 5px;
 	}
+
+	button {
+		background: var(--main-gradient);
+		border: none;
+		border-radius: 7px;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.75rem;
+		padding: 15px;
+		transition: 0.25s all;
+		width: fit-content;
+
+		svg {
+			margin-left: 7px;
+		}
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 `;
 
 export const b = styled.b`

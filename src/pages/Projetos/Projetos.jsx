@@ -1,14 +1,18 @@
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
+import ModalProjeto from '../../components/ModalProjeto/ModalProjeto';
 import Title from '../../components/Title/Title';
 import Button from '../../components/Button/Button';
 import projects from './projects';
 import * as s from './style';
 import { useState } from 'react';
+import ReactModal from 'react-modal';
 
 export default function Projetos() {
 	const [hoveredCard, setHoveredCard] = useState(null);
 	const [projetos, setProjetos] = useState(projects);
+	const [projetoSelecionado, setProjetoSelecionado] = useState();
+	const [modal, setModal] = useState(false);
 	const selectedOptions = [];
 	const animatedComponents = makeAnimated();
 
@@ -52,8 +56,19 @@ export default function Projetos() {
 		setHoveredCard(null);
 	};
 
+	const handleOpenModal = (projeto) => {
+		setProjetoSelecionado(projeto);
+		setModal(true);
+	};
+
+	const handleCloseModal = () => {
+		setModal(false);
+	};
+
+	ReactModal.setAppElement('#root');
+
 	return (
-		<s.section id='projetos'>
+		<s.section id="projetos">
 			<Title text="Projetos" />
 			<p>
 				Alguns dos meus projetos <s.b>pessoais e profissionais</s.b> que
@@ -98,7 +113,13 @@ export default function Projetos() {
 									<Button text="Em Desenvolvimento ⏳" />
 								) : (
 									<>
-										<Button text="Estudo de caso" />
+										<button
+											onClick={() =>
+												handleOpenModal(projeto)
+											}
+										>
+											Estudo de caso
+										</button>
 										{projeto.demo && (
 											<Button
 												text="Demo"
@@ -120,6 +141,13 @@ export default function Projetos() {
 					</s.card>
 				))}
 			</s.projectsDiv>
+			{modal && (
+				<ModalProjeto
+					modal={modal}
+					closeModal={handleCloseModal}
+					projeto={projetoSelecionado}
+				/>
+			)}
 		</s.section>
 	);
 }

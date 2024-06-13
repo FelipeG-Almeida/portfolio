@@ -10,6 +10,7 @@ import Protech from '../../assets/thumbs/protech.png';
 import Santander from '../../assets/thumbs/santander.jpg';
 import AngularStore from '../../assets/thumbs/angular-store.png';
 import BovControl from '../../assets/thumbs/bov-control.png';
+import BounceBoxMD from '../../assets/readme/bounce-box.md';
 
 const projetos = [
 	{
@@ -33,7 +34,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Sempre me falaram que eu era muito bom em construir planilhas de excel, então uni o útil ao agradável e coloquei em prática os conhecimentos que adquiri e criei um website para comercializar minhas planilhas. O intuito do site, além de facilitar a divulgação das planilhas, foi solidificar meu conhecimento nas tecnologias do front.',
 			stack: ['React', 'Styled-components', 'Mobile First'],
-			readme: '../../assets/readme/planilhas-blitz.md',
+			readme: '../assets/readme/planilhas-blitz.md',
 		},
 	},
 	{
@@ -48,7 +49,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Sites e serviços online geralmente exigem um endereço de e-mail válido para registrar acessar ou receber conteúdo protegido etc. No entanto o problema é que alguns desses sites podem usar nossos endereços de e-mail para enviar mensagens indesejadas. As pessoas não querem se preocupar mais com spam propagandas no email hackers e ataques de robôs. Uma boa maneira de lidar com isso é usar um endereço de e-mail temporário se você não tiver certeza de que este site é absolutamente confiável. Dessa forma você pode manter seus e-mails longe de spam e proteger sua privacidade. Este projeto consistem em uma aplicação que consome uma API de email temporário para que os usuários possam utilizar serviços sem expor seu email real.',
 			stack: ['React', 'Mobile', 'Bulma CSS'],
-			readme: '../../assets/readme/bounxe-box.md',
+			readme: BounceBoxMD,
 		},
 	},
 	{
@@ -57,13 +58,7 @@ const projetos = [
 		descricao:
 			'Rede social fortemente inspirada no reddit, o projeto final que coroa meu percurso pelo curso full-stack da Labenu.',
 		thumb: Labeddit,
-		tags: [
-			'React',
-			'NodeJs',
-			'Express',
-			'SQLite',
-			'Full-stack',
-		],
+		tags: ['React', 'NodeJs', 'Express', 'SQLite', 'Full-stack'],
 		git: 'https://github.com/FelipeG-Almeida/labeddit-backend',
 		demo: 'https://felipeg-almeida.github.io/labeddit-frontend/',
 		estudo: {
@@ -101,7 +96,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Projeto Pokedex Desenvolvido no Bootcamp Santander. Consistem em algumas páginas simples HTML com acesso a API pública Pokedex, listando Pokemons e suas informações, usando somente Javascript, HTML e CSS',
 			stack: ['Mobile', 'JavaScript', 'HTML', 'CSS'],
-			readme: '../../assets/readme/pokedex-vanilla.md',
+			readme: '../assets/readme/pokedex-vanilla.md',
 		},
 	},
 	{
@@ -116,7 +111,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Projeto React que consiste em uma página que consulta a API pública da Pokedex, trazendo informações detalhadas sobre pokemons por meio de uma interface construída em componentes, desenvolvido no curso de Desenvolvimento Full Stack da Labenu.',
 			stack: ['React', 'Styled-components', 'Mobile', 'Chakra UI'],
-			readme: '../../assets/readme/pokedex.md',
+			readme: '../assets/readme/pokedex.md',
 		},
 	},
 	{
@@ -130,7 +125,7 @@ const projetos = [
 		estudo: {
 			ideia: 'API Rest criada com framework Java Spring, simula o sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, tive a oportunidade de desenvolver minha primeira API CRUD utilizando Spring com MySQL.',
 			stack: ['Java', 'Spring', 'MySQL'],
-			readme: '../../assets/readme/vollmed.md',
+			readme: '../assets/readme/vollmed.md',
 		},
 	},
 	{
@@ -154,7 +149,7 @@ const projetos = [
 				'POO',
 				'Postman',
 			],
-			readme: '../../assets/readme/labook.md',
+			readme: '../assets/readme/labook.md',
 		},
 	},
 	{
@@ -169,7 +164,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Este projeto consiste em um decodificador simples que permite criptografar e descriptografar mensagens de texto, um desafio que faz parte do programa Oracle Next Education. O decodificador utiliza uma substituição de letras minúsculas, sem acentos, por palavras-chave.',
 			stack: ['HTML', 'CSS', 'JavaScript', 'Mobile'],
-			readme: '../../assets/readme/decodificador.md',
+			readme: '../assets/readme/decodificador.md',
 		},
 	},
 	{
@@ -184,7 +179,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Este é o projeto ProTech Computers uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start da Capgemini',
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-			readme: '../../assets/readme/protech.md',
+			readme: '../assets/readme/protech.md',
 		},
 	},
 	{
@@ -198,7 +193,7 @@ const projetos = [
 		estudo: {
 			ideia: 'API RESTful Java criada durante o bootcamp Santander DIO, que simula um sistema bancário com funções de conta e cartões.',
 			stack: ['Java', 'Spring', 'PostgreSQL'],
-			readme: '../../assets/readme/planilhas-blitz.md',
+			readme: '../assets/readme/planilhas-blitz.md',
 		},
 	},
 	{
@@ -212,7 +207,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Cópia da PS Store (que tem jogos de Xbox e PC por algum motivo 😅) feita com Angular, desafio concluido durante o bootcamp Santander DIO.',
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-			readme: '../../assets/readme/angular-store.md',
+			readme: '../assets/readme/angular-store.md',
 		},
 	},
 ];

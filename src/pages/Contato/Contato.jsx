@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Title from '../../components/Title/Title';
 import sendEmail from '../../services/formService';
 import * as s from './style';
@@ -32,11 +33,12 @@ export default function Contato() {
 				<s.form onSubmit={handleSubmit}>
 					<fieldset>
 						<label htmlFor="nome">Nome</label>
-						<input name="nome" id="nome" type="text" />
+						<input required name="nome" id="nome" type="text" />
 						<label htmlFor="email">E-mail</label>
-						<input name="email" id="email" type="email" />
+						<input required name="email" id="email" type="email" />
 						<label htmlFor="mensagem">Mensagem</label>
 						<textarea
+							required
 							rows="5"
 							name="mensagem"
 							id="mensagem"
@@ -44,6 +46,13 @@ export default function Contato() {
 					</fieldset>
 					<button type="submit">
 						{enviando ? 'Enviando...' : 'Enviar'}
+						{enviando && (
+							<FontAwesomeIcon
+								icon="fa-solid fa-circle-notch"
+								size="xl"
+								spin
+							/>
+						)}
 					</button>
 				</s.form>
 			</s.div>

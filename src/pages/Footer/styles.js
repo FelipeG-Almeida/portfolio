@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const footer = styled.footer`
 	align-items: center;
-	background-color: var(--main-color);
+	background: var(--main-gradient);
 	color: #fff;
 	display: flex;
 	flex-direction: column;

@@ -15,21 +15,40 @@ export const div = styled.div`
 	display: flex;
 	position: relative;
 	justify-content: flex-end;
+
+	@media screen and (max-width: 767px) {
+		align-items: center;
+		flex-direction: column-reverse;
+		row-gap: 20px;
+	}
 `;
 
 export const imageDiv = styled.div`
-	background-color: var(--main-color);
+	background: var(--main-gradient);
 	border-radius: 100%;
+	bottom: 50px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+		rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 	height: 70%;
-	left: 75px;
+	left: 5%;
 	padding: 20px;
 	position: absolute;
-	width: 25%;
+	width: auto;
 
 	img {
 		border-radius: 100%;
 		height: 100%;
 		width: 100%;
+	}
+
+	@media screen and (max-width: 1023px) {
+		left: -25px;
+		padding: 13px;
+	}
+
+	@media screen and (max-width: 767px) {
+		position: initial;
+		max-width: 50%;
 	}
 `;
 
@@ -82,8 +101,26 @@ export const form = styled.form`
 		transition: 0.25s all;
 		width: 20%;
 
+		svg {
+			margin-left: 10px;
+		}
+
 		&:hover {
 			transform: scale(1.05);
+		}
+	}
+
+	@media screen and (max-width: 1023px) {
+		button {
+			width: 120px;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+
+		button {
+			width: 100%;
 		}
 	}
 `;
