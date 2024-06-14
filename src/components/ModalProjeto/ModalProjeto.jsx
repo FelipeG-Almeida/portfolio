@@ -52,7 +52,9 @@ export default function ModalProjeto(props) {
 						<img src={projeto.thumb} alt="" />
 					</s.thumb>
 				</s.modalBody>
-				<MarkdownRenderer filePath={projeto.estudo.readme} />
+				<s.readmeDiv>
+					<MarkdownRenderer filePath={projeto.estudo.readme} />
+				</s.readmeDiv>
 			</s.modalDiv>
 		</ReactModal>
 	);

@@ -37,7 +37,7 @@ export const modalBody = styled.div`
 
 	p {
 		font-weight: 500;
-		line-height: 1.25;
+		line-height: 1.5;
 		margin-bottom: 15px;
 	}
 `;
@@ -69,5 +69,56 @@ export const thumb = styled.div`
 		border-radius: 7px;
 		object-fit: contain;
 		width: 100%;
+	}
+`;
+
+export const readmeDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	row-gap: 20px;
+	width: 100%;
+
+	img {
+		max-width: 100%;
+	}
+
+	h1 {
+		border-bottom: 1px solid #eeeef4;
+		font-size: 2rem;
+		font-weight: 800;
+		padding-bottom: 10px;
+	}
+
+	h2 {
+		border-bottom: 1px solid #eeeef4;
+		font-size: 1.25rem;
+		font-weight: 600;
+		padding-bottom: 10px;
+	}
+
+	p,
+	li {
+		font-weight: 500;
+		line-height: 1.5;
+	}
+
+	ul,
+	ol {
+		display: flex;
+		flex-direction: column;
+		list-style-type: disc;
+		padding-left: 20px;
+		row-gap: 10px;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	code {
+		background-color: #eeeef4;
+		display: inline-block;
+		padding: 10px;
 	}
 `;

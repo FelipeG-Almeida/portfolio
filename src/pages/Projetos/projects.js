@@ -10,7 +10,17 @@ import Protech from '../../assets/thumbs/protech.png';
 import Santander from '../../assets/thumbs/santander.jpg';
 import AngularStore from '../../assets/thumbs/angular-store.png';
 import BovControl from '../../assets/thumbs/bov-control.png';
+import PlanilhasBlitzMD from '../../assets/readme/planilhas-blitz.md';
 import BounceBoxMD from '../../assets/readme/bounce-box.md';
+import LabedditMD from '../../assets/readme/labeddit.md';
+import PokedexVanillaMD from '../../assets/readme/pokedex-vanilla.md';
+import PokedexMD from '../../assets/readme/pokedex.md';
+import VollmedMD from '../../assets/readme/vollmed.md';
+import LabookMD from '../../assets/readme/labook.md';
+import DecodificadorMD from '../../assets/readme/decodificador.md';
+import ProtechMD from '../../assets/readme/protech.md';
+import SantanderMD from '../../assets/readme/santander.md';
+import AngularStoreMD from '../../assets/readme/angular-store.md';
 
 const projetos = [
 	{
@@ -34,7 +44,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Sempre me falaram que eu era muito bom em construir planilhas de excel, então uni o útil ao agradável e coloquei em prática os conhecimentos que adquiri e criei um website para comercializar minhas planilhas. O intuito do site, além de facilitar a divulgação das planilhas, foi solidificar meu conhecimento nas tecnologias do front.',
 			stack: ['React', 'Styled-components', 'Mobile First'],
-			readme: '../assets/readme/planilhas-blitz.md',
+			readme: PlanilhasBlitzMD,
 		},
 	},
 	{
@@ -78,10 +88,7 @@ const projetos = [
 				'UUID',
 				'Unit Testing',
 			],
-			readme: [
-				'../../assets/readme/labeddit-backend.md',
-				'../../assets/readme/labeddit-frontend.md',
-			],
+			readme: LabedditMD,
 		},
 	},
 	{
@@ -96,7 +103,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Projeto Pokedex Desenvolvido no Bootcamp Santander. Consistem em algumas páginas simples HTML com acesso a API pública Pokedex, listando Pokemons e suas informações, usando somente Javascript, HTML e CSS',
 			stack: ['Mobile', 'JavaScript', 'HTML', 'CSS'],
-			readme: '../assets/readme/pokedex-vanilla.md',
+			readme: PokedexVanillaMD,
 		},
 	},
 	{
@@ -111,7 +118,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Projeto React que consiste em uma página que consulta a API pública da Pokedex, trazendo informações detalhadas sobre pokemons por meio de uma interface construída em componentes, desenvolvido no curso de Desenvolvimento Full Stack da Labenu.',
 			stack: ['React', 'Styled-components', 'Mobile', 'Chakra UI'],
-			readme: '../assets/readme/pokedex.md',
+			readme: PokedexMD,
 		},
 	},
 	{
@@ -125,7 +132,7 @@ const projetos = [
 		estudo: {
 			ideia: 'API Rest criada com framework Java Spring, simula o sistema de uma clínica com interação entre médidcos e pacientes. Desenvolvido durante o bootcamp Oracle ONE, tive a oportunidade de desenvolver minha primeira API CRUD utilizando Spring com MySQL.',
 			stack: ['Java', 'Spring', 'MySQL'],
-			readme: '../assets/readme/vollmed.md',
+			readme: VollmedMD,
 		},
 	},
 	{
@@ -149,7 +156,7 @@ const projetos = [
 				'POO',
 				'Postman',
 			],
-			readme: '../assets/readme/labook.md',
+			readme: LabookMD,
 		},
 	},
 	{
@@ -164,7 +171,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Este projeto consiste em um decodificador simples que permite criptografar e descriptografar mensagens de texto, um desafio que faz parte do programa Oracle Next Education. O decodificador utiliza uma substituição de letras minúsculas, sem acentos, por palavras-chave.',
 			stack: ['HTML', 'CSS', 'JavaScript', 'Mobile'],
-			readme: '../assets/readme/decodificador.md',
+			readme: DecodificadorMD,
 		},
 	},
 	{
@@ -179,7 +186,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Este é o projeto ProTech Computers uma aplicação web de e-commerce de produtos de hardware desenvolvida como parte do Programa Trainee Start da Capgemini',
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-			readme: '../assets/readme/protech.md',
+			readme: ProtechMD,
 		},
 	},
 	{
@@ -193,7 +200,7 @@ const projetos = [
 		estudo: {
 			ideia: 'API RESTful Java criada durante o bootcamp Santander DIO, que simula um sistema bancário com funções de conta e cartões.',
 			stack: ['Java', 'Spring', 'PostgreSQL'],
-			readme: '../assets/readme/planilhas-blitz.md',
+			readme: SantanderMD,
 		},
 	},
 	{
@@ -207,7 +214,7 @@ const projetos = [
 		estudo: {
 			ideia: 'Cópia da PS Store (que tem jogos de Xbox e PC por algum motivo 😅) feita com Angular, desafio concluido durante o bootcamp Santander DIO.',
 			stack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-			readme: '../assets/readme/angular-store.md',
+			readme: AngularStoreMD,
 		},
 	},
 ];

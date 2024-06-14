@@ -12,8 +12,6 @@ export default function MarkdownRenderer({ filePath }) {
 			.then((text) => setMarkdown(text));
 	}, [filePath]);
 
-	console.log(markdown);
-
 	return (
 		<ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdown}</ReactMarkdown>
 	);
