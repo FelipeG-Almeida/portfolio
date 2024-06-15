@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const section = styled.section`
 	display: grid;
@@ -95,5 +96,22 @@ export const figure = styled.figure`
 			opacity: 1;
 			filter: blur(24px);
 		}
+	}
+`;
+
+export const button = styled(Link)`
+	background: var(--main-gradient);
+	border: none;
+	border-radius: 7px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.75rem;
+	padding: 15px;
+	transition: 0.25s all;
+	width: fit-content;
+
+	&:hover {
+		transform: scale(1.05);
 	}
 `;

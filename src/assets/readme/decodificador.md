@@ -30,8 +30,10 @@ Este projeto consiste em um decodificador simples que permite criptografar e des
 
 ### Tablet e Mobile
 
-<img src="https://github.com/FelipeG-Almeida/decodificador/assets/73674044/95905cd6-00e3-419c-b020-4c290b9c6108" style="height: 530px"/>
-<img src="https://github.com/FelipeG-Almeida/decodificador/assets/73674044/8a051a49-4c64-46a1-a2cd-aad762f9f110" style="height: 530px"/>
+<kbd>
+  <img width="40%" src="https://github.com/FelipeG-Almeida/decodificador/assets/73674044/95905cd6-00e3-419c-b020-4c290b9c6108" />
+  <img width="40%" src="https://github.com/FelipeG-Almeida/decodificador/assets/73674044/8a051a49-4c64-46a1-a2cd-aad762f9f110" />
+</kbd>
 
 ## 🛠️ Tecnologias utilizadas
 

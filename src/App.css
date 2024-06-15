@@ -23,6 +23,22 @@ main > section {
 	padding: 10% 5% 0;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--main-color);
+}
+
 @media screen and (max-width: 1023px) {
 	main > section {
 		padding: 10% 10% 0;

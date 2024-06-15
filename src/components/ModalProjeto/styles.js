@@ -3,13 +3,20 @@ import styled from 'styled-components';
 export const modalDiv = styled.div`
 	color: var(--text-main);
 	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
+	padding: 0 40px 40px;
 `;
 
 export const modalHeader = styled.div`
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	color: var(--text-main);
 	display: flex;
+	font-family: 'Montserrat', sans-serif;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	padding: 20px;
+	position: sticky;
+	top: 0;
 
 	h2 {
 		font-size: 1.5rem;
@@ -39,6 +46,11 @@ export const modalBody = styled.div`
 		font-weight: 500;
 		line-height: 1.5;
 		margin-bottom: 15px;
+	}
+
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+		row-gap: 20px;
 	}
 `;
 
@@ -70,6 +82,11 @@ export const thumb = styled.div`
 		object-fit: contain;
 		width: 100%;
 	}
+
+	@media screen and (max-width: 767px) {
+		margin: 0 auto;
+		width: 50%;
+	}
 `;
 
 export const readmeDiv = styled.div`
@@ -81,6 +98,14 @@ export const readmeDiv = styled.div`
 
 	img {
 		max-width: 100%;
+	}
+
+	img:not([alt='shields']) {
+		height: auto;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
 	}
 
 	h1 {
@@ -101,6 +126,8 @@ export const readmeDiv = styled.div`
 	li {
 		font-weight: 500;
 		line-height: 1.5;
+		white-space: pre-wrap;
+		word-break: break-word;
 	}
 
 	ul,
@@ -118,7 +145,9 @@ export const readmeDiv = styled.div`
 
 	code {
 		background-color: #eeeef4;
-		display: inline-block;
+		display: block;
 		padding: 10px;
+		white-space: pre-wrap;
+		word-break: break-all;
 	}
 `;

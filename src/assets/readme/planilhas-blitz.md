@@ -31,8 +31,12 @@ Desktop -
 ---
 - Mobile
 
-<img width="40%" src="https://github.com/FelipeG-Almeida/PlanilhasBlitz/assets/73674044/3bc25304-8ced-41f5-ade1-1e5e76f079a8" />
-<img width="40%" src="https://github.com/FelipeG-Almeida/PlanilhasBlitz/assets/73674044/160c6943-9d82-4da7-958a-59d4b4f351dd" />
+<kbd>
+    <img width="40%" src="https://github.com/FelipeG-Almeida/PlanilhasBlitz/assets/73674044/3bc25304-8ced-41f5-ade1-1e5e76f079a8" />
+<kbd>
+<kbd>
+    <img width="40%" src="https://github.com/FelipeG-Almeida/PlanilhasBlitz/assets/73674044/160c6943-9d82-4da7-958a-59d4b4f351dd" />
+</kbd>
   
 <h2>🧐 Funcionalidades</h2>
 

@@ -6,17 +6,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ModalProjeto(props) {
 	const { modal, closeModal, projeto } = props;
+	const isMobile = window.innerWidth <= 767;
 
 	const customStyles = {
 		content: {
 			bottom: 'auto',
-			height: '80%',
+			height: isMobile ? '100%' : '80%',
 			left: '50%',
 			marginRight: '-50%',
+			padding: '0',
 			right: 'auto',
 			top: '50%',
 			transform: 'translate(-50%, -50%)',
-			width: '80%',
+			width: isMobile ? '100%' : '80%',
 		},
 		overlay: { zIndex: 1000 },
 	};
@@ -28,15 +30,15 @@ export default function ModalProjeto(props) {
 			style={customStyles}
 			shouldCloseOnOverlayClick={true}
 		>
+			<s.modalHeader>
+				<h2>{projeto.nome}</h2>
+				<FontAwesomeIcon
+					onClick={closeModal}
+					icon="fa-solid fa-xmark"
+					size="2xl"
+				/>
+			</s.modalHeader>
 			<s.modalDiv>
-				<s.modalHeader>
-					<h2>{projeto.nome}</h2>
-					<FontAwesomeIcon
-						onClick={closeModal}
-						icon="fa-solid fa-xmark"
-						size="2xl"
-					/>
-				</s.modalHeader>
 				<s.modalBody>
 					<div>
 						<h4>Ideia 💡</h4>

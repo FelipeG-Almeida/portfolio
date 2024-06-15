@@ -1,5 +1,4 @@
 import Title from '../../components/Title/Title';
-import Button from '../../components/Button/Button';
 import html from '../../assets/icons/html.png';
 import css from '../../assets/icons/css.png';
 import js from '../../assets/icons/js.png';
@@ -31,7 +30,7 @@ export default function Sobre() {
 	];
 
 	return (
-		<s.section id='sobre'>
+		<s.section id="sobre">
 			<s.titleDiv>
 				<Title text="Sobre mim" />
 			</s.titleDiv>
@@ -57,7 +56,14 @@ export default function Sobre() {
 					oportunidade que corresponda às minhas habilidades e
 					experiências, não hesite em entrar em contato.
 				</s.p>
-				<Button text="Entre em contato" />
+				<s.button
+					to="contato"
+					smooth={true}
+					duration={500}
+					offset={-30}
+				>
+					Entre em contato
+				</s.button>
 			</s.aboutDiv>
 			<div>
 				<s.h3>Habilidades/Stack</s.h3>

@@ -59,10 +59,12 @@ export default function Projetos() {
 	const handleOpenModal = (projeto) => {
 		setProjetoSelecionado(projeto);
 		setModal(true);
+		document.body.style.overflow = 'hidden';
 	};
 
 	const handleCloseModal = () => {
 		setModal(false);
+		document.body.style.overflow = 'unset';
 	};
 
 	ReactModal.setAppElement('#root');
