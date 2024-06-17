@@ -56,6 +56,7 @@ export default function Contato() {
 					</button>
 				</s.form>
 			</s.div>
+			<s.gif src="./wasup.gif" alt="" />
 		</s.section>
 	);
 }
