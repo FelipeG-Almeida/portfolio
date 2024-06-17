@@ -6,4 +6,5 @@ export default defineConfig({
 	base: '/portfolio/',
 	plugins: [react()],
 	assetsInclude: ['**/*.md'],
+	publicDir: 'public',
 });

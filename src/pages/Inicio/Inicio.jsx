@@ -23,9 +23,9 @@ export default function Inicio() {
 				</div>
 				<s.imgDiv>
 					<s.perfilDiv>
-						<s.perfilImg src="./perfil-git.jpg" alt="" />
+						<s.perfilImg src="./perfil.jpg" alt="" />
 					</s.perfilDiv>
-					<s.graphic src="/blob.svg" alt="" />
+					<s.graphic src="./blob.svg" alt="" />
 				</s.imgDiv>
 			</Fade>
 			<s.midias>

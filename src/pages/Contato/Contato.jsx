@@ -28,7 +28,7 @@ export default function Contato() {
 			</p>
 			<s.div>
 				<s.imageDiv>
-					<img src="./perfil.jpg" alt="" />
+					<img src="./perfil-git.jpg" alt="" />
 				</s.imageDiv>
 				<s.form onSubmit={handleSubmit}>
 					<fieldset>
