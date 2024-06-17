@@ -17,6 +17,7 @@ export const modalHeader = styled.div`
 	padding: 20px;
 	position: sticky;
 	top: 0;
+	z-index: 9999;
 
 	h2 {
 		font-size: 1.5rem;

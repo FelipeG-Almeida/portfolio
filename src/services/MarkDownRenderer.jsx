@@ -18,5 +18,5 @@ export default function MarkdownRenderer({ filePath }) {
 }
 
 MarkdownRenderer.propTypes = {
-	filePath: PropTypes.text,
+	filePath: PropTypes.string,
 };

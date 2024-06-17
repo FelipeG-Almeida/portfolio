@@ -92,8 +92,8 @@ export default function Projetos() {
 				{projetos.map((projeto) => (
 					<s.card
 						key={projeto.id}
-						ishovered={hoveredCard === null ? 'true' : undefined}
-						isactive={
+						$ishovered={hoveredCard === null ? 'true' : undefined}
+						$isactive={
 							hoveredCard === projeto.id ? 'false' : undefined
 						}
 						onMouseEnter={() => handleMouseEnter(projeto.id)}

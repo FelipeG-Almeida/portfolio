@@ -12,6 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
+	console.log('Nenhum bug por aqui 😏')
 	return (
 		<main>
 			<NavBar />

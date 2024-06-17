@@ -23,7 +23,8 @@ export const card = styled.div`
 	color: var(--text-main);
 	column-gap: 10px;
 	display: flex;
-	opacity: ${({ ishovered, isactive }) => (ishovered || isactive ? 1 : 0.5)};
+	opacity: ${({ $ishovered, $isactive }) =>
+		$ishovered || $isactive ? 1 : 0.5};
 	padding: 20px;
 	text-align: left;
 	transition: 0.25s all ease-in-out;

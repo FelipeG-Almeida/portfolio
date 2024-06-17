@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import MarkdownRenderer from '../../services/MarkDownRenderer';
 import * as s from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Fade } from 'react-awesome-reveal';
 
 export default function ModalProjeto(props) {
 	const { modal, closeModal, projeto } = props;
@@ -38,26 +39,28 @@ export default function ModalProjeto(props) {
 					size="2xl"
 				/>
 			</s.modalHeader>
-			<s.modalDiv>
-				<s.modalBody>
-					<div>
-						<h4>Ideia 💡</h4>
-						<p>{projeto.estudo.ideia}</p>
-						<h4>Tecnologias e Métodologias</h4>
-						<s.tags>
-							{projeto.estudo.stack.map((s) => (
-								<small key={s}>{s}</small>
-							))}
-						</s.tags>
-					</div>
-					<s.thumb>
-						<img src={projeto.thumb} alt="" />
-					</s.thumb>
-				</s.modalBody>
-				<s.readmeDiv>
-					<MarkdownRenderer filePath={projeto.estudo.readme} />
-				</s.readmeDiv>
-			</s.modalDiv>
+			<Fade duration={1000}>
+				<s.modalDiv>
+					<s.modalBody>
+						<div>
+							<h4>Ideia 💡</h4>
+							<p>{projeto.estudo.ideia}</p>
+							<h4>Tecnologias e Métodologias</h4>
+							<s.tags>
+								{projeto.estudo.stack.map((s) => (
+									<small key={s}>{s}</small>
+								))}
+							</s.tags>
+						</div>
+						<s.thumb>
+							<img src={projeto.thumb} alt="" />
+						</s.thumb>
+					</s.modalBody>
+					<s.readmeDiv>
+						<MarkdownRenderer filePath={projeto.estudo.readme} />
+					</s.readmeDiv>
+				</s.modalDiv>
+			</Fade>
 		</ReactModal>
 	);
 }
