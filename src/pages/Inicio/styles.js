@@ -10,6 +10,9 @@ export const section = styled.section`
 		align-items: flex-start;
 		flex-direction: column;
 	}
+	@media screen and (min-width: 1920px) {
+		padding: 5% 20%;
+	}
 `;
 
 export const imgDiv = styled.div`

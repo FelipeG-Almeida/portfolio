@@ -9,6 +9,9 @@ export const section = styled.section`
 	p {
 		line-height: 1.5;
 	}
+	@media screen and (min-width: 1920px) {
+		padding: 5% 10%;
+	}
 `;
 
 export const div = styled.div`

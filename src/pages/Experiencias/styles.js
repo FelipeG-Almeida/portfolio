@@ -6,6 +6,9 @@ export const section = styled.section`
 	line-height: 1.5;
 	row-gap: 20px;
 	text-align: center;
+	@media screen and (min-width: 1920px) {
+		padding: 5% 10%;
+	}
 `;
 
 export const b = styled.b`
@@ -19,6 +22,9 @@ export const jobsDiv = styled.div`
 	grid-template-rows: auto;
 	justify-content: space-between;
 	row-gap: 20px;
+	@media screen and (min-width: 1440px) {
+		grid-template-columns: 1fr 1fr;
+	}
 `;
 
 export const card = styled.div`
@@ -62,5 +68,6 @@ export const card = styled.div`
 
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
+		row-gap: 10px;
 	}
 `;

@@ -11,6 +11,9 @@ export const section = styled.section`
 		flex-direction: column;
 		grid-gap: 20px;
 	}
+	@media screen and (min-width: 1920px) {
+		padding: 5% 20%;
+	}
 `;
 
 export const titleDiv = styled.div`
