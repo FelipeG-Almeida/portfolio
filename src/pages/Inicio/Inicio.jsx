@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../components/Button/Button';
-import Curriculo from '/CV Felipe Almeida - Fullstack.pdf';
+import Curriculo from '/CV.docx?url';
 import { Fade } from 'react-awesome-reveal';
 import * as s from './styles';
 
@@ -9,16 +9,16 @@ export default function Inicio() {
 		<s.section id="home">
 			<Fade direction="down" duration={1000} style={{ width: '100%' }}>
 				<div>
-					<s.h2>Procurando um desenvolvedor?</s.h2>
+					<s.h2>Looking for a developer?</s.h2>
 					<s.h1>Felipe Almeida</s.h1>
 					<s.p>
-						Desenvolvedor {window.innerWidth < 426 && <br></br>}
-						Full-stack
+						Full-stack {window.innerWidth < 426 && <br></br>}
+						Developer
 					</s.p>
 					<Button
 						link={Curriculo}
 						newTab={true}
-						text="Download Currículo"
+						text="Download Resume"
 					/>
 				</div>
 				<s.imgDiv>

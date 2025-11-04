@@ -43,9 +43,9 @@ export default function ModalProjeto(props) {
 				<s.modalDiv>
 					<s.modalBody>
 						<div>
-							<h4>Ideia 💡</h4>
+							<h4>Idea 💡</h4>
 							<p>{projeto.estudo.ideia}</p>
-							<h4>Tecnologias e Métodologias</h4>
+							<h4>Technologies & Methodologies</h4>
 							<s.tags>
 								{projeto.estudo.stack.map((s) => (
 									<small key={s}>{s}</small>

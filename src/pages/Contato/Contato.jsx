@@ -20,11 +20,10 @@ export default function Contato() {
 	return (
 		<s.section id="contato">
 			<div>
-				<Title text="Contato" />
+				<Title text="Contact" />
 			</div>
 			<p>
-				Sinta-se à vontade para entrar em contato através do formulário
-				abaixo. Responderei o mais rápido possível.
+				Feel free to reach out using the form below. I will get back to you as soon as possible.
 			</p>
 			<s.div>
 				<s.imageDiv>
@@ -32,11 +31,11 @@ export default function Contato() {
 				</s.imageDiv>
 				<s.form onSubmit={handleSubmit}>
 					<fieldset>
-						<label htmlFor="nome">Nome</label>
+						<label htmlFor="nome">Name</label>
 						<input required name="nome" id="nome" type="text" />
-						<label htmlFor="email">E-mail</label>
+						<label htmlFor="email">Email</label>
 						<input required name="email" id="email" type="email" />
-						<label htmlFor="mensagem">Mensagem</label>
+						<label htmlFor="mensagem">Message</label>
 						<textarea
 							required
 							rows="5"
@@ -45,7 +44,7 @@ export default function Contato() {
 						></textarea>
 					</fieldset>
 					<button type="submit">
-						{enviando ? 'Enviando...' : 'Enviar'}
+						{enviando ? 'Sending...' : 'Send'}
 						{enviando && (
 							<FontAwesomeIcon
 								icon="fa-solid fa-circle-notch"

@@ -6,34 +6,33 @@ import * as s from './styles';
 export default function Experiencias() {
     return (
         <s.section id='experiencias'>
-            <Title text='Experiências' />
+            <Title text='Experience' />
             <p>
-                Um resumo das minhas <s.b>experiências profissionais</s.b>,
-                destacando as habilidades e conhecimentos adquiridos ao longo da
-                minha carreira.
+                A summary of my <s.b>professional experience</s.b>, highlighting
+                the skills, impact and knowledge I’ve developed throughout my
+                career.
             </p>
             <s.jobsDiv>
                 <s.card>
                     <img src={TuaAgenda} alt='Tua Agenda Logo' />
                     <div>
                         <h5>Tua Agenda</h5>
-                        <h6>Desenvolvedor Full-stack</h6>
-                        <small>08/2024 - Presente</small>
+                        <h6>Full-stack Developer</h6>
+                        <small>08/2024 - Present</small>
                         <p>
-                            Responsável por projetar e implementar interfaces
-                            dinâmicas com forte foco em usabilidade e apelo
-                            visual. Atuação com{' '}
-                            <s.b>React, Next.js e Styled-components</s.b>.
-                            Desenvolvo uma plataforma que permite que clientes
-                            registrem seus negócios e serviços, facilitando o
-                            agendamento de compromissos para os usuários, com
-                            foco em performance e experiência do usuário (UX).
-                            Responsável por aumentar o desempenho do sistema ao
-                            otimizar interações no front-end, resultando em uma
-                            redução significativa no número de chamados para o
-                            back-end. Também atuo na manutenção e implementação
-                            de novos microserviços no backend através de{' '}
-                            <s.b>Java/Spring e MongoDB.</s.b>
+                            Responsible for designing and implementing dynamic
+                            and visually appealing user interfaces, with strong
+                            focus on usability and performance. Working with{' '}
+                            <s.b>React, Next.js and Styled-components</s.b>.
+                            Building a platform that allows clients to register
+                            their businesses and services, enabling users to
+                            easily book appointments – focusing on performance
+                            and user experience (UX). Improved overall system
+                            performance by optimizing front-end interactions,
+                            significantly reducing the amount of requests made
+                            to the back-end. Also responsible for maintaining
+                            and implementing new microservices on the backend
+                            using <s.b>Java/Spring and MongoDB.</s.b>
                         </p>
                     </div>
                 </s.card>
@@ -41,25 +40,24 @@ export default function Experiencias() {
                     <img src={Artemis} alt='Artemis Corporation Logo' />
                     <div>
                         <h5>Artemis Corporation</h5>
-                        <h6>Desenvolvedor Full-stack</h6>
-                        <small>02/2024 - 03/2025</small>
+                        <h6>Full-stack Developer</h6>
+                        <small>02/2023 - 08/2024</small>
                         <p>
-                            Responsável por projetar e implementar um sistema de
-                            automação no WhatsApp. Uso de{' '}
-                            <s.b>Java com Spring e MySQL</s.b> para desenvolver
-                            APIs, gerenciar bancos de dados e implementar lógica
-                            de negócios complexa. No front-end, utilizo{' '}
-                            <s.b>Angular e React</s.b> para construir interfaces
-                            intuitivas e envolventes. Desenvolvimento de um
-                            sistema de automação do WhatsApp que permite aos
-                            clientes criar fluxos de atendimento personalizados
-                            e automatizados. Através de uma interface em blocos,
-                            é possível configurar chatbots dinâmicos.
-                            Responsável por reformular a UI do micro serviço
-                            para criação de chatbots, substituindo Angular por
-                            React, o que melhorou a usabilidade e o desempenho,
-                            tornando a experiência mais responsiva e amigável
-                            para os clientes.
+                            Responsible for designing and implementing an
+                            automated WhatsApp system. Worked with{' '}
+                            <s.b>Java + Spring and MySQL</s.b> to build APIs,
+                            manage database operations and implement complex
+                            business logic. On the front-end, used{' '}
+                            <s.b>Angular and React</s.b> to build intuitive and
+                            engaging interfaces. Developed an automation system
+                            that enables clients to create custom support flows
+                            and automated chat experiences. Through a
+                            block-based interface, clients can configure dynamic
+                            chatbots. Led the UI refactor of the chatbot
+                            creation microservice — replacing Angular with
+                            React, improving usability and performance,
+                            resulting in a more responsive and user-friendly
+                            experience.
                         </p>
                     </div>
                 </s.card>

@@ -14,22 +14,22 @@ export default function NavBar() {
 			{window.innerWidth >= 1024 ? (
 				<s.desktopUl>
 					<s.desktopLi to="home" smooth={true} duration={500}>
-						Início
+						Home
 					</s.desktopLi>
 					<s.desktopLi to="sobre" smooth={true} duration={500}>
-						Sobre mim
+						About
 					</s.desktopLi>
 					<s.desktopLi to="projetos" smooth={true} duration={500}>
-						Projetos
+						Projects
 					</s.desktopLi>
 					<s.desktopLi to="experiencias" smooth={true} duration={500}>
-						Experiências
+						Experience
 					</s.desktopLi>
 					<s.desktopLi to="formacoes" smooth={true} duration={500}>
-						Formação
+						Education
 					</s.desktopLi>
 					<s.desktopLi to="contato" smooth={true} duration={500}>
-						Contato
+						Contact
 					</s.desktopLi>
 				</s.desktopUl>
 			) : (
@@ -47,7 +47,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Início
+							Home
 						</s.mobileLi>
 						<s.mobileLi
 							onClick={toggleNav}
@@ -56,7 +56,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Sobre mim
+							About
 						</s.mobileLi>
 						<s.mobileLi
 							onClick={toggleNav}
@@ -65,7 +65,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Projetos
+							Projects
 						</s.mobileLi>
 						<s.mobileLi
 							onClick={toggleNav}
@@ -74,7 +74,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Experiências
+							Experience
 						</s.mobileLi>
 						<s.mobileLi
 							onClick={toggleNav}
@@ -83,7 +83,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Formação
+							Education
 						</s.mobileLi>
 						<s.mobileLi
 							onClick={toggleNav}
@@ -92,7 +92,7 @@ export default function NavBar() {
 							duration={500}
 							offset={-250}
 						>
-							Contato
+							Contact
 						</s.mobileLi>
 					</s.mobileUl>
 				</s.hamburguer>
@@ -100,3 +100,4 @@ export default function NavBar() {
 		</s.nav>
 	);
 }
+

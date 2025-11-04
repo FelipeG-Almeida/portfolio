@@ -46,8 +46,7 @@ export default function Footer() {
 					</a>
 				</ul>
 			<small>
-				© Copyright {new Date().getFullYear()}. Feito por Felipe
-				Almeida... obviamente
+				© Copyright {new Date().getFullYear()}. Designed & Built by Felipe Almeida
 			</small>
 		</s.footer>
 	);
